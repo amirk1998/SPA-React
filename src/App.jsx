@@ -15,13 +15,15 @@ import Layout from './Layout/Layout';
 
 function App() {
   return (
-    <div className='bg-neutral-100 text-slate-900 flex flex-col items-center h-[100vh] w-full p-8 font-[Montserrat]'>
-      <Routes>
-        <Route path='/' exact={true} element={<HomePage />} />
-        <Route path='/about-us' element={<AboutUS />} />
-        <Route path='/profile' element={<Profile />} />
-      </Routes>
-    </div>
+    <Layout>
+      <div className='bg-neutral-100 text-slate-900 flex flex-col items-center mx-8 p-8 font-[Montserrat]'>
+        <Routes>
+          <Route path='/' exact={true} element={<HomePage />} />
+          <Route path='/about-us' element={<AboutUS />} />
+          <Route path='/profile' element={<Profile />} />
+        </Routes>
+      </div>
+    </Layout>
   );
 }
 

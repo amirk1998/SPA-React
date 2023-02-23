@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className='w-[100vh] bg-neutral-200 p-4 my-4 rounded-lg text-center'>
+    <footer className='mx-8 bg-neutral-200 p-4 mt-4 mb-2 rounded-lg text-center'>
       Footer
     </footer>
   );

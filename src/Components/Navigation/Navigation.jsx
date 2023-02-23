@@ -12,7 +12,7 @@ const Navigation = (props) => {
   console.log(props);
 
   return (
-    <nav>
+    <nav className='w-[100vw]'>
       <ul className='flex flex-row items-center justify-evenly'>
         {items.map((item) => {
           return (
