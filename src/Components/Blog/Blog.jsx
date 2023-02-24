@@ -10,6 +10,12 @@ const Blog = (props) => {
       <p className='text-center text-lg text-slate-700 mt-2'>
         Lorem ipsum dolor sit amet.
       </p>
+      <Link
+        to={`/blogs/${parseInt(id) + 1}`}
+        className='text-emerald-500 hover:text-emerald-700 my-2'
+      >
+        Go to next Blog Page
+      </Link>
       <Link to='/blogs' className='text-violet-500 hover:text-violet-700 my-2'>
         Go to Blog Page
       </Link>
