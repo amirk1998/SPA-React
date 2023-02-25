@@ -23,7 +23,9 @@ const BlogPage = () => {
               //     : 'text-slate-400 hover:text-slate-700 '
               // }
             >
-              <Link to={item.to}>{item.name}</Link>
+              <Link to={{ pathname: item.to, search: 'sort=name' }}>
+                {item.name}
+              </Link>
             </li>
           );
         })}
